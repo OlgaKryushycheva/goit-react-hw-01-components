@@ -1,16 +1,17 @@
 import styled from 'styled-components';
 import { Colors } from 'components/Colors';
 
-export const StyleList = styled.ul`
-  padding-top: 40px;
-  padding-bottom: 40px;
+export const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin-bottom: 20px;
+  background-color: ${Colors.white};
 `;
 
-export const StyleItem = styled.li`
+export const Item = styled.li`
   display: flex;
   gap: 15px;
   padding: 5px 10px;
@@ -34,13 +35,13 @@ export const Svg = styled.span`
   }};
 `;
 
-export const StyleImg = styled.img`
+export const Img = styled.img`
   border-radius: 20%;
   object-fit: contain;
   outline: 1px solid ${Colors.grey};
 `;
 
-export const StyleName = styled.p`
+export const Name = styled.p`
   font-size: 18px;
   font-weight: 700;
 `;

@@ -4,6 +4,7 @@ import { Colors } from 'components/Colors';
 export const Section = styled.section`
   padding-top: 40px;
   margin-bottom: 20px;
+  background-color: ${Colors.white};
 `;
 
 export const Title = styled.h2`

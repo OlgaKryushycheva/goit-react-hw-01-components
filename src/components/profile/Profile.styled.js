@@ -2,11 +2,12 @@ import styled from 'styled-components';
 import { Colors } from 'components/Colors';
 
 export const StyleProfile = styled.div`
+  padding-top: 40px;
+  margin-bottom: 20px;
   font-size: 25px;
   text-align: center;
   color: ${Colors.grey};
-  padding-top: 40px;
-  margin-bottom: 20px;
+  background-color: ${Colors.white};
 `;
 
 export const Avatar = styled.img`

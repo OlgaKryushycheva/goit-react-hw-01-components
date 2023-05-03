@@ -9,6 +9,5 @@ export const StyleApp = styled.div`
   font-weight: 900px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  background-color: ${Colors.white};
   color: ${Colors.black};
 `;

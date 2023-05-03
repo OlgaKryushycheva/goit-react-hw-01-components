@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { BsFillCircleFill } from 'react-icons/bs';
-import { Svg, StyleImg, StyleName } from 'components/friends/Friends.styled';
+import { Svg, Img, Name } from 'components/friends/Friends.styled';
 
 export const FriendListItem = ({ item: { avatar, name, isOnline } }) => {
   return (
@@ -8,8 +8,8 @@ export const FriendListItem = ({ item: { avatar, name, isOnline } }) => {
       <Svg isOnline={isOnline}>
         <BsFillCircleFill size={16} />
       </Svg>
-      <StyleImg src={avatar} alt={name} width="48" />
-      <StyleName>{name}</StyleName>
+      <Img src={avatar} alt={name} width="48" />
+      <Name>{name}</Name>
     </>
   );
 };

@@ -6,7 +6,7 @@ export const Table = styled.table`
   border: none;
   border: 1px solid ${Colors.greyTable};
   margin-bottom: 20px;
-  /* background-color: ${Colors.white}; */
+  background-color: ${Colors.white};
   padding: 40px;
   box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.12);
   border-collapse: collapse;
