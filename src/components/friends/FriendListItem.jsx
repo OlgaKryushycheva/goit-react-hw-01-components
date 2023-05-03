@@ -1,11 +1,15 @@
 import PropTypes from 'prop-types';
+import { BsFillCircleFill } from 'react-icons/bs';
+import { Svg, StyleImg, StyleName } from 'components/friends/Friends.styled';
 
 export const FriendListItem = ({ item: { avatar, name, isOnline } }) => {
   return (
     <>
-      <span>{isOnline}</span>
-      <img src={avatar} alt={name} width="48" />
-      <p>{name}</p>
+      <Svg isOnline={isOnline}>
+        <BsFillCircleFill size={16} />
+      </Svg>
+      <StyleImg src={avatar} alt={name} width="48" />
+      <StyleName>{name}</StyleName>
     </>
   );
 };

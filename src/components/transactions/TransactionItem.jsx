@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import { Cell } from 'components/transactions/Transactions.styled';
 
 export const TransactionItem = ({ item: { type, amount, currency } }) => {
   return (
     <>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <Cell>{type}</Cell>
+      <Cell>{amount}</Cell>
+      <Cell>{currency}</Cell>
     </>
   );
 };

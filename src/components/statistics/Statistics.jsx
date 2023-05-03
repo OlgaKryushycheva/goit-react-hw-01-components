@@ -1,24 +1,25 @@
 import PropTypes from 'prop-types';
-import { StatisticsData } from './StatisticsData';
+import { StatisticsData } from 'components/statistics/StatisticsData';
+import { Section, Title, List, Item } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section>
-      {title && <h2>{title}</h2>}
-      <ul>
+    <Section>
+      {title && <Title>{title}</Title>}
+      <List>
         {stats.map(stat => (
-          <li key={stat.id}>
+          <Item key={stat.id} value={stat.id}>
             <StatisticsData stat={stat} />
-          </li>
+          </Item>
         ))}
-      </ul>
-    </section>
+      </List>
+    </Section>
   );
 };
 
 Statistics.propTypes = {
   title: PropTypes.string.isRequired,
-  items: PropTypes.arrayOf(
+  stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
     })

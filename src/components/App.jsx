@@ -1,28 +1,26 @@
-import user from './profile/user.json';
-import { Profile } from './profile/Profile';
+import { GlobalStyle } from 'components/GlobalStyle';
+import { StyleApp } from 'components/App.styled';
 
-import data from './statistics/data.json';
-import { Statistics } from './statistics/Statistics';
+import user from 'components/profile/user.json';
+import { Profile } from 'components/profile/Profile';
 
-import friends from './friends/friends.json';
-import { FriendList } from './friends/FriendList';
+import data from 'components/statistics/data.json';
+import { Statistics } from 'components/statistics/Statistics';
 
-import transactions from './transactions/transactions.json';
-import { TransactionHistory } from './transactions/TransactionHistory';
-import { GlobalStyle } from './GlobalStyle';
+import friends from 'components/friends/friends.json';
+import { FriendList } from 'components/friends/FriendList';
+
+import transactions from 'components/transactions/transactions.json';
+import { TransactionHistory } from 'components/transactions/TransactionHistory';
 
 export const App = () => {
   return (
-    <div>
+    <StyleApp>
       <Profile item={user} />
-
       <Statistics title="Upload stats" stats={data} />
-
       <FriendList items={friends} />
-
       <TransactionHistory items={transactions} />
-
       <GlobalStyle />
-    </div>
+    </StyleApp>
   );
 };
