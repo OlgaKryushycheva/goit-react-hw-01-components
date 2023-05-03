@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Colors } from 'components/Colors';
+import { Colors } from 'styles/Colors';
 
 export const Table = styled.table`
   width: 100%;

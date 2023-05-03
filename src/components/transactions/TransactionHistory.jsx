@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { TransactionItem } from 'components/transactions/TransactionItem';
 
-import { Table, Head, Row } from 'components/transactions/Transactions.styled';
+import { Table, Head } from 'components/transactions/Transactions.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (
@@ -16,9 +16,7 @@ export const TransactionHistory = ({ items }) => {
 
       <tbody>
         {items.map(item => (
-          <Row key={item.id}>
-            <TransactionItem item={item} />
-          </Row>
+          <TransactionItem key={item.id} item={item} />
         ))}
       </tbody>
     </Table>
