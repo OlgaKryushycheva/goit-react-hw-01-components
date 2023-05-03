@@ -1,6 +1,5 @@
 import { StyleApp } from 'components/App/App.styled';
 
-// import user from 'components/profile/user.json';
 import user from 'data/user.json';
 import { Profile } from 'components/profile/Profile';
 
